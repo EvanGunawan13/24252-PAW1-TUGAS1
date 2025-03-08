@@ -1,0 +1,39 @@
+body{
+    background-color: #CDE8E5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    color: #508D4E;
+}
+
+h2{
+    color: #508D4E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    color: #508D4E;
+}
+
+p{
+    color: #508D4E;
+}
+
+a{
+    text-decoration: underline;
+    color: #008cff;
+}
+
+ol{
+    color: #508D4E;
+}
+
+input[type="text"], input[type="date"], textarea,
+select{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px; 
+    border: 1px solid #ffffff; 
+
+}

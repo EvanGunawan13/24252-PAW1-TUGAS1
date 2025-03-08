@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <h1>Pendaftaran</h1>
+    <form action="proses.php" method="get">
+        Nama Lengkap <br>
+        <input type="text" name="namaLengkap" id="namaLengkap" 
+        required> <br>
+        Tanggal Lahir <br>
+        <input type="date" name="TanggalLahir"
+        id="TanggalLahir"> <br>
+        Fakultas <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FIKR" checked> 
+        Fakultas Ilmu Komputer dan Rekayasa <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FEB"> 
+        Fakultas Ekonomi dan Bisnis <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FKD"> 
+        Fakultas Kedokteran <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FIKP"> 
+        Fakultas Ilmu Pendidikan <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FT"> 
+        Fakultas Teknik <br>
+        <input type="radio" name="FK" id="jkl"
+        value="FH"> 
+        Fakultas Hukum <br>
+        Tempat Lahir <br>
+        <select name="tempatlahir" id="tempatlahir">
+        <option value="PLB">Palembang</option>
+        <option value="JKT">Jakarta</option>
+        <option value="NGW">Ngawi</option>
+        <option value="MJK">Mojokerto</option>
+        <option value="SBY">Surabaya</option>
+        <option value="PDG">Padang</option>
+        <option value="BKL">Bengkulu</option>
+        </select> <br>
+        Jurusan yang anda pilih: <br>
+        <textarea name="Jurusan yang diinginkan" id="Jurusan" placeholder="Masukkan Jurusan"></textarea>
+        <br>
+        Prestasi yang pernah anda capai:
+        <textarea name="Prestasi yang dicapai" id="Prestasi" placeholder="Masukkan Prestasi"></textarea>
+        <br>
+        <button type="submit">Kirim</button>
+        
+
+    </form>
+</body>
+</html>
