@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+
+    <!-- Bootstrap CSS (Opsional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f0f5ff; /* Latar belakang biru muda */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            background: #004080;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            color: white;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .privacy-box {
+            background: #e8f0ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #002f5c;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hubungi Kami</h1>
+        <div class="contact-info">
+            <h2>Call Center: +62 012-345-6789</h2>
+            <p><strong>📍 Lokasi:</strong> Jl Metro Pondok Indah No 999, Jakarta Selatan, Indonesia</p>
+            <p><strong>📧 Email:</strong> universitasnusantara@gmail.com</p>
+            <p><strong>🌍 Web:</strong> universitasnusantara.co.id</p>
+        </div>
+
+        <h1>Privacy</h1>
+        <div class="privacy-box">
+            <h2>Selamat datang di situs web resmi Universitas Nusantara. Dengan mengakses dan menggunakan situs web kami, Anda setuju untuk mematuhi syarat dan ketentuan kami.</h2>
+            <h2>Kami menghormati privasi Anda dan berkomitmen untuk melindungi informasi pribadi yang dikumpulkan melalui situs ini. Data hanya akan digunakan untuk meningkatkan layanan kami dan tidak akan dibagikan kepada pihak ketiga tanpa persetujuan Anda.</h2>
+            <h2>Semua konten, termasuk gambar, teks, dan logo, adalah kekayaan intelektual Universitas Nusantara. Pengguna dilarang melakukan peretasan atau tindakan berbahaya lainnya.</h2>
+        </div>
+
+        <h1>Laporkan Bug</h1>
+        <form action="proses.php" method="get">
+            <label for="email">Email Anda:</label>
+            <input type="text" name="email" id="email" placeholder="Masukkan Email Anda" required>
+
+            <label for="Bug">Deskripsikan Bug:</label>
+            <textarea name="Bug" id="Bug" placeholder="Jelaskan bug yang Anda temukan"></textarea>
+
+            <button type="submit">Kirim Laporan</button>
+        </form>
+    </div>
+
+</body>
+</html>

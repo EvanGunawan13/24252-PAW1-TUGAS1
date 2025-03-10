@@ -3,56 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/Style.css">
+    <title>Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgb(255, 255, 255);
+        }
+
+        h1 {
+            text-align: center;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #002f5c;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Pendaftaran</h1>
-    <form action="proses.php" method="get">
-        Nama Lengkap <br>
-        <input type="text" name="namaLengkap" id="namaLengkap" 
-        required> <br>
-        Tanggal Lahir <br>
-        <input type="date" name="TanggalLahir"
-        id="TanggalLahir"> <br>
-        Fakultas <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FIKR" checked> 
-        Fakultas Ilmu Komputer dan Rekayasa <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FEB"> 
-        Fakultas Ekonomi dan Bisnis <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FKD"> 
-        Fakultas Kedokteran <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FIKP"> 
-        Fakultas Ilmu Pendidikan <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FT"> 
-        Fakultas Teknik <br>
-        <input type="radio" name="FK" id="jkl"
-        value="FH"> 
-        Fakultas Hukum <br>
-        Tempat Lahir <br>
-        <select name="tempatlahir" id="tempatlahir">
-        <option value="PLB">Palembang</option>
-        <option value="JKT">Jakarta</option>
-        <option value="NGW">Ngawi</option>
-        <option value="MJK">Mojokerto</option>
-        <option value="SBY">Surabaya</option>
-        <option value="PDG">Padang</option>
-        <option value="BKL">Bengkulu</option>
-        </select> <br>
-        Jurusan yang anda pilih: <br>
-        <textarea name="Jurusan yang diinginkan" id="Jurusan" placeholder="Masukkan Jurusan"></textarea>
-        <br>
-        Prestasi yang pernah anda capai:
-        <textarea name="Prestasi yang dicapai" id="Prestasi" placeholder="Masukkan Prestasi"></textarea>
-        <br>
-        <button type="submit">Kirim</button>
-        
 
-    </form>
+    <div class="container">
+        <h1>Form Pendaftaran</h1>
+        <form action="proses.php" method="get">
+
+            <label for="namaLengkap">Nama Lengkap:</label>
+            <input type="text" name="namaLengkap" id="namaLengkap" placeholder="Masukkan Nama Anda" required>
+
+            <label for="TanggalLahir">Tanggal Lahir:</label>
+            <input type="date" name="TanggalLahir" id="TanggalLahir" placeholder="Masukkan Tanggal Lahir Anda" required>
+
+            <label>Fakultas:</label> <br>
+            <input type="radio" name="FK" value="FIKR" checked> Fakultas Ilmu Komputer dan Rekayasa <br>
+            <input type="radio" name="FK" value="FEB"> Fakultas Ekonomi dan Bisnis <br>
+            <input type="radio" name="FK" value="FKD"> Fakultas Kedokteran <br>
+            <input type="radio" name="FK" value="FIP"> Fakultas Ilmu Pendidikan <br>
+            <input type="radio" name="FK" value="FT"> Fakultas Teknik <br>
+            <input type="radio" name="FK" value="FH"> Fakultas Hukum <br>
+
+            <label for="tempatlahir">Tempat Lahir:</label>
+            <select name="tempatlahir" id="tempatlahir">
+                <option value="PLB">Palembang</option>
+                <option value="JKT">Jakarta</option>
+                <option value="NGW">Ngawi</option>
+                <option value="MJK">Mojokerto</option>
+                <option value="SBY">Surabaya</option>
+                <option value="PDG">Padang</option>
+                <option value="BKL">Bengkulu</option>
+            </select>
+
+            <label for="Jurusan">Jurusan yang diinginkan:</label>
+            <textarea name="Jurusan" id="Jurusan" placeholder="Masukkan jurusan pilihan Anda"></textarea>
+
+            <label for="Prestasi">Prestasi yang pernah Anda capai:</label>
+            <textarea name="Prestasi" id="Prestasi" placeholder="Masukkan prestasi Anda"></textarea>
+
+            <button type="submit">Kirim Pendaftaran</button>
+        </form>
+    </div>
+
 </body>
 </html>
